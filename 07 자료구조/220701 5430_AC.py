@@ -21,12 +21,14 @@ for _ in range(t):
     breaker = False
 
     for a in range(len(p)):
+        # 뒤집기 함수
         if p[0] == "R":
             if reverse == False:
                 reverse = True
             else:
                 reverse = False
             p.popleft()
+        # 버리기 함수
         else:
             if len(x) == 0:
                 breaker = True
