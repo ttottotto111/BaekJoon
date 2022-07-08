@@ -11,5 +11,6 @@ for _ in range(n):
     else:
         num_dict[num] = 1
 
+# value 값으로 내림차순 정렬, 같다면 key값으로 오름차순 정렬
 result = sorted(num_dict.items(), key = lambda x:(-x[1],x[0]))
-print(result)
+print(result[0][0])
