@@ -25,5 +25,9 @@ def dfs(s, computer):
 
 visited = []
 dfs(1, computer)
+
 # 본인을 제외한 나머지 개수 출력
-print(len(visited)-1)
+if len(visited) <= 0:
+    print(len(visited))
+else:
+    print(len(visited)-1)
